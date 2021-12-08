@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+  font-family: "Rockwell";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+.header {
+  height: 90px;
+  width: 100%;
+  background-color: #333333;
+}
+
+.header-left {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  float: left;
+  margin: 15px 50px;
+}
+
+.header-left a {
+  color: #ffffff;
+}
+
+.header-right a {
+  float: right;
+  line-height: 65px;
+  padding: 12.5px 34px;
+  color: #ffffff;
+  display: block;
+  font-size: 20px;
+}
+
+.header-right a:hover {
+  background-color: #910022;
+}
+
+button {
+  border: none;
+}
+
+input {
+  display: block;
+  width: 80%;
+  padding: 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: -7px;
+  border: none;
+  border-bottom: 2px solid #212121;
+  font-family: "Montserrat";
+  font-size: 16px;
+}
+
+label {
+  font-family: "Montserrat";
+  margin-left: -7px;
+}
+
+.popup {
+  border-radius: 10px;
+  padding: 0px 20px 60px 20px;
+  margin-left:  30%;
+  margin-right: 30%;
+  box-shadow: 1px 1px 5px;
+  background-color: white;
+  visibility: hidden;
+}
+
+.popup h1,form {
+  margin-left: 15%;
+}
+
+.popup h1 {
+  margin-left: 32%;
+  font-family: "Montserrat";
+  color: black;
+  margin-bottom: 10%;
+}
+
+.popup p {
+  position: relative;
+  left: 39.5%;
+  bottom: -10px;
+  display: inline;
+}
+
+.popup a {
+  font-family: "Montserrat";
+  font-weight: lighter;
+  color: black;
+  margin-left: 58%;
+}
+
+.popup a:hover {
+  color: crimson;
+}
+
+.popup label {
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+.btn {
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: white;
+  width: 87%;
+  height: 40px;
+  margin-left: -1.7%;
+  margin-bottom: 0%;
+  background-color: #212121;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #212121;
+}
+
+#wrab:target .popup {
+  transition: 0.56s;
+  transform: translateY(100px);
+  position: relative;
+  visibility: visible;
+}
+
+#wrab:target .bg-color {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 50rem;
+  background-color: rgb(0, 0, 0,.5);
+}
+
+.Header-List{
+  font-family: "Montserrat";
+  display: inline-block;
+  padding: 30px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color:#b3b3b3;
+
+}
+
+.Header-List li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 70px;
+}
+/* END HEADER */
+.Utama h1{
+    margin-top: -300px;
+    text-align: center;
+}
+.Utama{
+    margin: 0 10%;
+}
+
+.Profil img, .Visimisi img, .Jasa img, .Tentang img{
+    margin: 40px 20%;
+}
+
+.Profil, .Visimisi, .Jasa, .Tentang{
+    margin: 50px 10%;
+}
+
+.Profil p, .Visimisi p, .Jasa p, .Tentang p {
+    padding: 10px 0;
+}
+
+.footer {
+  background-color: #262626;
+  padding: 30px 0;
+}
+.footer-list{
+    display: flex;
+  justify-content: center;
+}
+
+.footer-list li{
+  display: inline;
+  padding: 0 70px;
+  color: white;
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+    .Header-List{
+        visibility: hidden;
+    }
+
+    .Utama{
+        margin: 0 5%;
+    }
+
+    
+    .Utama h1{
+        margin-top: -400px;
+    }
+
+    .Profil img, .Visimisi img, .Jasa img, .Tentang img{
+        margin: 90px 0;
+        max-width: 90%;
+    }
+
+    .popup {
+        margin-left: 10%;
+        margin-right: 10%;
+    }    
+}
